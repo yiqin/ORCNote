@@ -14,6 +14,7 @@
 		8D99FC8D1BDC0A5800240FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D99FC8B1BDC0A5800240FA1 /* LaunchScreen.storyboard */; };
 		8D99FC981BDC0A5800240FA1 /* ORCNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D99FC971BDC0A5800240FA1 /* ORCNoteTests.swift */; };
 		8D99FCA31BDC0A5800240FA1 /* ORCNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D99FCA21BDC0A5800240FA1 /* ORCNoteUITests.swift */; };
+		8FE80594E9F63A6E999B67EA /* libPods-ORCNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99456CFFA81A6C3A64DB29D1 /* libPods-ORCNote.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EFABDDBC7DBCA0C7DD304A2 /* Pods-ORCNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORCNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-ORCNote/Pods-ORCNote.release.xcconfig"; sourceTree = "<group>"; };
 		8D99FC7F1BDC0A5800240FA1 /* ORCNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORCNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D99FC821BDC0A5800240FA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D99FC841BDC0A5800240FA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		8D99FC9E1BDC0A5800240FA1 /* ORCNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ORCNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D99FCA21BDC0A5800240FA1 /* ORCNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORCNoteUITests.swift; sourceTree = "<group>"; };
 		8D99FCA41BDC0A5800240FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99456CFFA81A6C3A64DB29D1 /* libPods-ORCNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ORCNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E61FAB28D24C6ECD6FCD24 /* Pods-ORCNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORCNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ORCNote/Pods-ORCNote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE80594E9F63A6E999B67EA /* libPods-ORCNote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05D73D1A66ADA847277BD401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99456CFFA81A6C3A64DB29D1 /* libPods-ORCNote.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		414AC77A3906626E8B340D14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8E61FAB28D24C6ECD6FCD24 /* Pods-ORCNote.debug.xcconfig */,
+				1EFABDDBC7DBCA0C7DD304A2 /* Pods-ORCNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8D99FC761BDC0A5800240FA1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				8D99FC961BDC0A5800240FA1 /* ORCNoteTests */,
 				8D99FCA11BDC0A5800240FA1 /* ORCNoteUITests */,
 				8D99FC801BDC0A5800240FA1 /* Products */,
+				414AC77A3906626E8B340D14 /* Pods */,
+				05D73D1A66ADA847277BD401 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D99FCA71BDC0A5800240FA1 /* Build configuration list for PBXNativeTarget "ORCNote" */;
 			buildPhases = (
+				ECA8E4540981FC779FDC2DE8 /* Check Pods Manifest.lock */,
 				8D99FC7B1BDC0A5800240FA1 /* Sources */,
 				8D99FC7C1BDC0A5800240FA1 /* Frameworks */,
 				8D99FC7D1BDC0A5800240FA1 /* Resources */,
+				D8A3CAACF23CEA9193DC421B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8A3CAACF23CEA9193DC421B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ORCNote/Pods-ORCNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA8E4540981FC779FDC2DE8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D99FC7B1BDC0A5800240FA1 /* Sources */ = {
@@ -395,9 +454,12 @@
 		};
 		8D99FCA81BDC0A5800240FA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E61FAB28D24C6ECD6FCD24 /* Pods-ORCNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ORCNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.yiqin.ORCNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,9 +468,12 @@
 		};
 		8D99FCA91BDC0A5800240FA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EFABDDBC7DBCA0C7DD304A2 /* Pods-ORCNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ORCNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.yiqin.ORCNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +547,7 @@
 				8D99FCA91BDC0A5800240FA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D99FCAA1BDC0A5800240FA1 /* Build configuration list for PBXNativeTarget "ORCNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +556,7 @@
 				8D99FCAC1BDC0A5800240FA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D99FCAD1BDC0A5800240FA1 /* Build configuration list for PBXNativeTarget "ORCNoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +565,7 @@
 				8D99FCAF1BDC0A5800240FA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
