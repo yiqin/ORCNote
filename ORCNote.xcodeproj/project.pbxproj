@@ -14,6 +14,11 @@
 		8D99FC8D1BDC0A5800240FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D99FC8B1BDC0A5800240FA1 /* LaunchScreen.storyboard */; };
 		8D99FC981BDC0A5800240FA1 /* ORCNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D99FC971BDC0A5800240FA1 /* ORCNoteTests.swift */; };
 		8D99FCA31BDC0A5800240FA1 /* ORCNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D99FCA21BDC0A5800240FA1 /* ORCNoteUITests.swift */; };
+		8DB359771BDC0D3C00BE9D55 /* Lenore3-400x320.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB359761BDC0D3C00BE9D55 /* Lenore3-400x320.png */; };
+		8DB359791BDC126F00BE9D55 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 8DB359781BDC126F00BE9D55 /* tessdata */; };
+		8DB3597B1BDC137200BE9D55 /* IMG_0789.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8DB3597A1BDC137200BE9D55 /* IMG_0789.PNG */; };
+		8DB3597F1BDC13E700BE9D55 /* IMG_0791.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8DB3597E1BDC13E700BE9D55 /* IMG_0791.JPG */; };
+		8DB359811BDC154000BE9D55 /* IMG_0655.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8DB359801BDC154000BE9D55 /* IMG_0655.JPG */; };
 		8FE80594E9F63A6E999B67EA /* libPods-ORCNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99456CFFA81A6C3A64DB29D1 /* libPods-ORCNote.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,12 @@
 		8D99FC9E1BDC0A5800240FA1 /* ORCNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ORCNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D99FCA21BDC0A5800240FA1 /* ORCNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORCNoteUITests.swift; sourceTree = "<group>"; };
 		8D99FCA41BDC0A5800240FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DB359711BDC0CF900BE9D55 /* ORCNote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ORCNote-Bridging-Header.h"; sourceTree = "<group>"; };
+		8DB359761BDC0D3C00BE9D55 /* Lenore3-400x320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenore3-400x320.png"; sourceTree = "<group>"; };
+		8DB359781BDC126F00BE9D55 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = SOURCE_ROOT; };
+		8DB3597A1BDC137200BE9D55 /* IMG_0789.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0789.PNG; sourceTree = "<group>"; };
+		8DB3597E1BDC13E700BE9D55 /* IMG_0791.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0791.JPG; sourceTree = "<group>"; };
+		8DB359801BDC154000BE9D55 /* IMG_0655.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0655.JPG; sourceTree = "<group>"; };
 		99456CFFA81A6C3A64DB29D1 /* libPods-ORCNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ORCNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E61FAB28D24C6ECD6FCD24 /* Pods-ORCNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORCNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ORCNote/Pods-ORCNote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +138,9 @@
 				8D99FC891BDC0A5800240FA1 /* Assets.xcassets */,
 				8D99FC8B1BDC0A5800240FA1 /* LaunchScreen.storyboard */,
 				8D99FC8E1BDC0A5800240FA1 /* Info.plist */,
+				8DB359711BDC0CF900BE9D55 /* ORCNote-Bridging-Header.h */,
+				8DB359781BDC126F00BE9D55 /* tessdata */,
+				8DB359751BDC0D1F00BE9D55 /* TestImages */,
 			);
 			path = ORCNote;
 			sourceTree = "<group>";
@@ -148,6 +162,17 @@
 			);
 			path = ORCNoteUITests;
 			sourceTree = "<group>";
+		};
+		8DB359751BDC0D1F00BE9D55 /* TestImages */ = {
+			isa = PBXGroup;
+			children = (
+				8DB359761BDC0D3C00BE9D55 /* Lenore3-400x320.png */,
+				8DB3597A1BDC137200BE9D55 /* IMG_0789.PNG */,
+				8DB3597E1BDC13E700BE9D55 /* IMG_0791.JPG */,
+				8DB359801BDC154000BE9D55 /* IMG_0655.JPG */,
+			);
+			path = TestImages;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -255,9 +280,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB359771BDC0D3C00BE9D55 /* Lenore3-400x320.png in Resources */,
+				8DB3597B1BDC137200BE9D55 /* IMG_0789.PNG in Resources */,
+				8DB3597F1BDC13E700BE9D55 /* IMG_0791.JPG in Resources */,
 				8D99FC8D1BDC0A5800240FA1 /* LaunchScreen.storyboard in Resources */,
+				8DB359791BDC126F00BE9D55 /* tessdata in Resources */,
 				8D99FC8A1BDC0A5800240FA1 /* Assets.xcassets in Resources */,
 				8D99FC881BDC0A5800240FA1 /* Main.storyboard in Resources */,
+				8DB359811BDC154000BE9D55 /* IMG_0655.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,12 +487,15 @@
 			baseConfigurationReference = A8E61FAB28D24C6ECD6FCD24 /* Pods-ORCNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ORCNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.yiqin.ORCNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ORCNote/ORCNote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -471,12 +504,14 @@
 			baseConfigurationReference = 1EFABDDBC7DBCA0C7DD304A2 /* Pods-ORCNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ORCNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.yiqin.ORCNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ORCNote/ORCNote-Bridging-Header.h";
 			};
 			name = Release;
 		};
