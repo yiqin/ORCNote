@@ -21,6 +21,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Do any additional setup after loading the view, typically from a nib.
         
         // Test ORC
+        /*
         let operation = G8RecognitionOperation(language: "eng")
         operation.tesseract.image = UIImage(named: "IMG_0655.JPG")?.g8_blackAndWhite()
         
@@ -30,13 +31,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             SVProgressHUD.dismiss()
         }
         
-        
         queue.addOperation(operation)
+        */
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        SVProgressHUD.show()
     }
     
     
@@ -60,7 +60,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        // picker.allowsEditing = true
+        imagePicker.allowsEditing = true
         imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
         
         self.presentViewController(imagePicker, animated: true, completion: { () -> Void in
