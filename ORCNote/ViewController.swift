@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    let queue = NSOperationQueue()
+    
+    var imagePicker: UIImagePickerController!
+    
     @IBOutlet weak var recognizedTextView: UITextView!
     
     override func viewDidLoad() {
@@ -26,7 +30,7 @@ class ViewController: UIViewController {
             SVProgressHUD.dismiss()
         }
         
-        let queue = NSOperationQueue()
+        
         queue.addOperation(operation)
     }
     
@@ -34,10 +38,45 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         SVProgressHUD.show()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func processImage(image:UIImage) {
+        
+        let operation = G8RecognitionOperation(language: "eng")
+        operation.tesseract.image = image
+        
+        operation.recognitionCompleteBlock = { (recognizedTesseract: G8Tesseract!) -> Void in
+            print(recognizedTesseract.recognizedText)
+            self.recognizedTextView.text = recognizedTesseract.recognizedText
+            SVProgressHUD.dismiss()
+        }
+        
+        SVProgressHUD.show()
+        queue.addOperation(operation)
+    }
+    
+    
+    @IBAction func takePhotoAction(sender: AnyObject) {
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        // picker.allowsEditing = true
+        imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+        
+        self.presentViewController(imagePicker, animated: true, completion: { () -> Void in
+            
+        })
+        
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
+        let fixedOrientationImage = image.fixOrientation()
+        processImage(fixedOrientationImage)
+        
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        
+        
     }
 
 

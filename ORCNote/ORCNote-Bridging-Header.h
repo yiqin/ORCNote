@@ -4,3 +4,4 @@
 
 #import <TesseractOCR/TesseractOCR.h>
 #import <SVProgressHUD/SVProgressHUD.h>
+#import "UIImage+FixOrientation.h"

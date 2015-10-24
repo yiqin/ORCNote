@@ -19,6 +19,7 @@
 		8DB3597B1BDC137200BE9D55 /* IMG_0789.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8DB3597A1BDC137200BE9D55 /* IMG_0789.PNG */; };
 		8DB3597F1BDC13E700BE9D55 /* IMG_0791.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8DB3597E1BDC13E700BE9D55 /* IMG_0791.JPG */; };
 		8DB359811BDC154000BE9D55 /* IMG_0655.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8DB359801BDC154000BE9D55 /* IMG_0655.JPG */; };
+		8DE90A941BDC206F00E6C8EF /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE90A931BDC206F00E6C8EF /* UIImage+fixOrientation.m */; };
 		8FE80594E9F63A6E999B67EA /* libPods-ORCNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99456CFFA81A6C3A64DB29D1 /* libPods-ORCNote.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		8DB3597A1BDC137200BE9D55 /* IMG_0789.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0789.PNG; sourceTree = "<group>"; };
 		8DB3597E1BDC13E700BE9D55 /* IMG_0791.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0791.JPG; sourceTree = "<group>"; };
 		8DB359801BDC154000BE9D55 /* IMG_0655.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0655.JPG; sourceTree = "<group>"; };
+		8DE90A921BDC206F00E6C8EF /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		8DE90A931BDC206F00E6C8EF /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
 		99456CFFA81A6C3A64DB29D1 /* libPods-ORCNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ORCNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E61FAB28D24C6ECD6FCD24 /* Pods-ORCNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORCNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ORCNote/Pods-ORCNote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +137,8 @@
 			children = (
 				8D99FC821BDC0A5800240FA1 /* AppDelegate.swift */,
 				8D99FC841BDC0A5800240FA1 /* ViewController.swift */,
+				8DE90A921BDC206F00E6C8EF /* UIImage+fixOrientation.h */,
+				8DE90A931BDC206F00E6C8EF /* UIImage+fixOrientation.m */,
 				8D99FC861BDC0A5800240FA1 /* Main.storyboard */,
 				8D99FC891BDC0A5800240FA1 /* Assets.xcassets */,
 				8D99FC8B1BDC0A5800240FA1 /* LaunchScreen.storyboard */,
@@ -345,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE90A941BDC206F00E6C8EF /* UIImage+fixOrientation.m in Sources */,
 				8D99FC851BDC0A5800240FA1 /* ViewController.swift in Sources */,
 				8D99FC831BDC0A5800240FA1 /* AppDelegate.swift in Sources */,
 			);
