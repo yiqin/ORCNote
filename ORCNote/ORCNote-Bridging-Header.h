@@ -3,3 +3,4 @@
 //
 
 #import <TesseractOCR/TesseractOCR.h>
+#import <SVProgressHUD/SVProgressHUD.h>

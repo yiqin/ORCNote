@@ -4,6 +4,7 @@
 target 'ORCNote' do
 
 pod 'TesseractOCRiOS', '4.0.0'
+pod 'SVProgressHUD'
 
 end
 

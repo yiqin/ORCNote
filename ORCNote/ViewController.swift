@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var recognizedTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,12 +22,17 @@ class ViewController: UIViewController {
         
         operation.recognitionCompleteBlock = { (recognizedTesseract: G8Tesseract!) -> Void in
             print(recognizedTesseract.recognizedText)
+            self.recognizedTextView.text = recognizedTesseract.recognizedText
+            SVProgressHUD.dismiss()
         }
         
         let queue = NSOperationQueue()
         queue.addOperation(operation)
-        
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        SVProgressHUD.show()
     }
 
     override func didReceiveMemoryWarning() {

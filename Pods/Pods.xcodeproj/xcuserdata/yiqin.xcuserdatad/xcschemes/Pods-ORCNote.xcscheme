@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B1CC9BD49706AF5DFC22BF4A"
+               BlueprintIdentifier = "4B03760C2A0673753A80872C"
                BuildableName = "libPods-ORCNote.a"
                BlueprintName = "Pods-ORCNote"
                ReferencedContainer = "container:Pods.xcodeproj">
