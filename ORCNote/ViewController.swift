@@ -44,6 +44,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         let operation = G8RecognitionOperation(language: "eng")
         operation.tesseract.image = image
+        operation.tesseract.charBlacklist = "\"'?~/\\.,<>!#$%^&*()[]{}|"
         
         operation.recognitionCompleteBlock = { (recognizedTesseract: G8Tesseract!) -> Void in
             print(recognizedTesseract.recognizedText)
