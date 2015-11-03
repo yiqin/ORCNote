@@ -44,7 +44,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         let operation = G8RecognitionOperation(language: "eng")
         operation.tesseract.image = image
-        operation.tesseract.charBlacklist = "\"'?~/\\.,<>!#$%^&*()[]{}|"
+        // operation.tesseract.charBlacklist = "\"'?~/\\.,<>!#$%^&*()[]{}|"
+        
+        let punctuation = "@-"
+        let number = "1234567890"
+        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        
+        operation.tesseract.charWhitelist = punctuation+number+alphabet+alphabet.lowercaseString
+        
         
         operation.recognitionCompleteBlock = { (recognizedTesseract: G8Tesseract!) -> Void in
             print(recognizedTesseract.recognizedText)
